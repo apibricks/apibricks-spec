@@ -1,3 +1,5 @@
+# apibricks-spec
+
 ### Interface between gRPC API containers and API adapter containers
 
 * Each gRPC API container *must* provide the following file: `/api/main.proto`
