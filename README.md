@@ -1,4 +1,4 @@
-# apibricks-spec
+# API bricks spec
 
 ### Interface between gRPC API containers and API adapter containers
 
