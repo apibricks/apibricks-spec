@@ -10,9 +10,10 @@
 
 * The `/api` directory *can* optionally contain additional files such as metadata, which may be read and considered by certain API adapters.
 
-* The `/api/main.proto` file *must* follow the Protocol Buffers specification version 3 (proto3). Therefore each API adapter *must* understand all proto3 features:
+* The `/api/main.proto` file *must* follow the Protocol Buffers specification version 3 (proto3). Each API adapter *must* understand all proto3 and gRPC features:
   * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec
   * https://developers.google.com/protocol-buffers/docs/proto3
+  * http://www.grpc.io/docs/guides/concepts.html
 
 * The environment variables `API_HOST` (IP address or hostname) and `API_PORT` (port number) *must* be provided to the API adapter, so the adapter can connect to the gRPC API.
 
