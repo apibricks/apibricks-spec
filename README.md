@@ -5,6 +5,7 @@
 * Each gRPC API container *must* provide the following file: `/api/main.proto`
 
 * The `/api` directory is a shared Docker volume. It is provided by the gRPC API container and used by the API adapter container. The API adapter container loads the `/api/main.proto` file to communicate with the gRPC API container.
+  * Therefore, the `Dockerfile` of the gRPC API container *must* include the statement `VOLUME /api`.
 
 * The `/api/main.proto` file is the *only* required file. Therefore each API adapter *must* work properly based on this file without any additional metadata.
 
